@@ -6,7 +6,7 @@ class ProspectsController < ApplicationController
   def create
     @prospect = Prospect.new(prospect_params)
     if @prospect.save 
-      flash[:success] = "Profile submitted!"
+      flash[:success] = "Your profile was submitted successfully!"
       redirect_to root_url
     else
       render 'new'

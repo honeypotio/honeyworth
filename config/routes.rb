@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root 'prospects#new'
   resources :prospects, only: [:new, :create]
-  # The priority is based upon order of creation: first created -> highest priority.
+
+  get 'pages/legal_notice'
+
+# The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

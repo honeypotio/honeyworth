@@ -1,4 +1,7 @@
 .footer
-  .container
-    %span.footer__item &copy; 2015 Honeypot GmbH
-    = link_to 'Legal Notice', '/pages/legal_notice'
+  .container.text-center
+    %span.footer__item
+      Created with
+      = image_tag "/images/mascot.png", class: 'footer__mascot'
+      by
+      = link_to 'Honeypot Team', 'http://honeypot.io'

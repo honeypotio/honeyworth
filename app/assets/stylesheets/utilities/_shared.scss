@@ -1,0 +1,14 @@
+.footer {
+  padding-bottom: 100px;
+  margin-top: 115px;
+  font-size: $fs-footer;
+
+  a {
+    text-decoration: underline;
+  }
+
+  &__mascot {
+    @include sizing(26px 33px);
+    margin-top: -5px;
+  }
+}

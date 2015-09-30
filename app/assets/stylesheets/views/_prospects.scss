@@ -1,7 +1,89 @@
 .prospects {
+  padding-top: 105px;
+
+  &__icon-container {
+    margin-bottom: 43px;
+    text-align: center;
+  }
+
+  &__icon {
+    @include sizing(84px 78px);
+  }
 
   &__heading {
+    @include text($fs-heading, $fw-bold, $white-color);
+  }
+
+  &__intro {
+    @include text($fs-intro, $fw-light, $text-color);
+  }
+
+  &__steps {
+    width: 410px;
+    padding: 0;
+    margin-top: 20px;
+
+    &__item {
+      margin-top: 5px;
+    }
+
+    &__item-number {
+      @include sizing(45px);
+      position: relative;
+
+      .honeycomb__shape {
+        @include sizing(45px);
+        fill: transparent;
+        stroke: $yellow-color;
+        stroke-width: 20px;
+      }
+
+      &__digit {
+        @include absolute(top 0 left 0);
+        @include text($fs-honeycomb-digit, $fw-bold, $yellow-color);
+        width: 100%;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
+
+    &__item-heading {
+      @include text($fs-2, $fw-bold, $white-color);
+      margin-top: 0;
+    }
+  }
+
+  &__form {
+    margin-top: 75px;
+  }
+
+  &__label,
+  &__emphasis {
+    font-weight: $fw-bold;
     color: $white-color;
   }
 
+  &__form-group {
+    margin: 0 0 34px;
+  }
+
+  &__info {
+    margin: 30px 0;
+    font-weight: $fw-light;
+  }
+
+  &__input-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &__input-bottom {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &__btn {
+    width: 100%;
+  }
 }

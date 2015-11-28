@@ -1,0 +1,18 @@
+<li class="media prospects__steps__item">
+    <div class="media-left">
+      <div class="prospects__steps__item-number">
+        <span class="prospects__steps__item-number__digit">
+          <%= @number %>
+        </span>
+        <%= render "honeycomb_number.html" %>
+      </div>
+    </div>
+    <div class="media-body">
+      <h3 class="prospects__steps__item-heading">
+        <%= @heading %>
+      </h3>
+      <p>
+        <%= @text %>
+      </p>
+    </div>
+</li>

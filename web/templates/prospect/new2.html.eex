@@ -1,0 +1,5 @@
+<h2>New prospect</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: prospect_path(@conn, :create) %>
+

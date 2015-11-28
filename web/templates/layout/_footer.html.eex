@@ -1,0 +1,12 @@
+<div class="footer">
+  <div class="container text-center">
+    <span class="footer__item">
+      Created with
+      <img class="footer__mascot" src="/images/mascot.png" alt="Mascot">
+      by
+      <a href='http://honeypot.io'>Honeypot Team</a>
+      |
+      <a href='/pages/legal_notice'>Legal Notice</a>
+    </span>
+  </div>
+</div>

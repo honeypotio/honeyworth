@@ -17,3 +17,18 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+
+License
+-------
+
+Copyright © 2015 Honeypot GmbH. All rights reserved.
+
+
+About Honeypot
+--------------
+
+![Honeypot](https://www.honeypot.io/logo.png)
+
+Honeypot is a developer focused job platform.
+The names and logos for Honeypot are trademarks of Honeypot GmbH.

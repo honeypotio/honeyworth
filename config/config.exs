@@ -30,3 +30,8 @@ config :phoenix, :generators,
 
 config :phoenix, :template_engines,
   haml: PhoenixHaml.Engine
+
+config :honeyworth, mailgun_domain: System.get_env("MAILGUN_DOMAIN"),
+  mailgun_key: System.get_env("MAILGUN_API_KEY"),
+  from_email: System.get_env("FROM_EMAIL"),
+  admin_email: System.get_env("ADMIN_EMAIL")

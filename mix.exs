@@ -36,7 +36,8 @@ defmodule Honeyworth.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:mailgun, "~> 0.1.1"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

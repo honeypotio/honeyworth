@@ -17,9 +17,15 @@ defmodule Honeyworth.ProspectController do
       {:ok, _prospect} ->
         conn
         |> put_flash(:info, "Thank you! We received your profile and will get back to you with your salary report within 72 hours via email.")
+        |> notify(changeset.changes)
         |> redirect(to: prospect_path(conn, :new))
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
+  end
+
+  defp notify(conn, prospect_params) do
+    Honeyworth.Mailer.new_salary_calculation_request(prospect_params)
+    conn
   end
 end

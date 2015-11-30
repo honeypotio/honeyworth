@@ -3,7 +3,7 @@ defmodule Honeyworth.ProspectTest do
 
   alias Honeyworth.Prospect
 
-  @valid_attrs %{dev_link: "some content", email: "some content", name: "some content", profile_link: "some content"}
+  @valid_attrs %{dev_link: "some content", email: "Qwiggle@honeypot.co", name: "some content", profile_link: "some content"}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

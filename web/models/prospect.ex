@@ -12,6 +12,7 @@ defmodule Honeyworth.Prospect do
 
   @required_fields ~w(email profile_link dev_link)
   @optional_fields ~w(name)
+  @email_regexp ~r/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -22,5 +23,6 @@ defmodule Honeyworth.Prospect do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> validate_format(:email, @email_regexp)
   end
 end

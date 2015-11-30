@@ -2,7 +2,7 @@ defmodule Honeyworth.ProspectControllerTest do
   use Honeyworth.ConnCase
 
   alias Honeyworth.Prospect
-  @valid_attrs %{dev_link: "some content", email: "some content", profile_link: "some content"}
+  @valid_attrs %{dev_link: "some content", email: "Qwiggle@honeypot.co", profile_link: "some content"}
   @invalid_attrs %{}
 
   setup do

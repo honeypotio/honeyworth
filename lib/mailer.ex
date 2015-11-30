@@ -4,11 +4,13 @@ defmodule Honeyworth.Mailer do
     mode: Mix.env,
     test_file_path: "./tmp/mailgun.json"
 
-  @from Application.get_env(:honeyworth, :from_email, "noreply@whatamiworth.io")
-  @email Application.get_env(:honeyworth, :admin_email, "whatamiworht@honeypot.io")
+  @from Application.get_env(:honeyworth, :from_email)
+  @email Application.get_env(:honeyworth, :admin_email)
 
   def new_salary_calculation_request(payload) do
-    new_salary_calculation_request payload, @email, @from
+    if @email && @from do
+      new_salary_calculation_request payload, @email, @from
+    end
   end
 
   defp new_salary_calculation_request(payload, email, from) do

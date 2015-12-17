@@ -1,5 +1,17 @@
 # Honeyworth
 
+[![www.honeyworth.io](web/static/assets/images/brandenburger_tor.png)][1]
+
+Easy way to find out what you could earn as a developer in Berlin
+
+---
+
+## Development
+
+powered by:
+
+![phoenix-framework](web/static/assets/images/phoenix.png)
+
 To start your Phoenix app:
 
   1. Install dependencies with `mix deps.get`
@@ -10,7 +22,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
-## Learn more
+### Learn more
 
   * Official website: http://www.phoenixframework.org/
   * Guides: http://phoenixframework.org/docs/overview
@@ -32,3 +44,5 @@ About Honeypot
 
 Honeypot is a developer focused job platform.
 The names and logos for Honeypot are trademarks of Honeypot GmbH.
+
+[1]: http://www.whatamiworth.io

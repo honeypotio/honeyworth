@@ -5,5 +5,7 @@ deploy:
   run:
     - mix ecto.migrate
     - restart
+env:
+  - MIX_ENV=test
 script:
   - "mix do deps.get, compile, coveralls.travis"

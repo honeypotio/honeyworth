@@ -17,8 +17,8 @@
 
   <div class="form-group prospects__form-group">
     <%= label f, :profile_link, "Profile", class: "prospects__label" %><span class="text-danger">*</span>
-    <%= text_input f, :profile_link, placeholder: "LinkedIn profile", class: "form-control" %>
-    <%= text_input f, :dev_link, placeholder: "GitHub profile", class: "form-control" %>
+    <%= text_input f, :profile_link, placeholder: "LinkedIn profile", class: "form-control prospects__input-top" %>
+    <%= text_input f, :dev_link, placeholder: "GitHub profile", class: "form-control prospects__input-bottom" %>
   </div>
 
   <div class="form-group">

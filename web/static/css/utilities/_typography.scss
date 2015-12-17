@@ -8,28 +8,28 @@
 @font-face {
   font-family: 'Proxima-Nova';
   font-weight: 100;
-  src: asset-url('/fonts/ProximaNova-Light.otf') format('opentype');
+  src: url('/fonts/ProximaNova-Light.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima-Nova';
-  src: asset-url('/fonts/ProximaNova-Regular.otf') format('opentype');
+  src: url('/fonts/ProximaNova-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima-Nova';
   font-weight: 600;
-  src: asset-url('/fonts/ProximaNova-SBold.otf') format('opentype');
+  src: url('/fonts/ProximaNova-SBold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima-Nova';
   font-weight: 800;
-  src: asset-url('/fonts/ProximaNova-Bold.otf') format('opentype');
+  src: url('/fonts/ProximaNova-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima-Nova';
   font-style: italic;
-  src: asset-url('/fonts/ProximaNova-RegItalic.otf') format('opentype');
+  src: url('/fonts/ProximaNova-RegItalic.otf') format('opentype');
 }

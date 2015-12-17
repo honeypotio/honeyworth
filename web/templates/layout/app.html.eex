@@ -8,7 +8,7 @@
     <meta name="author" content="Honeypot">
 
     <title>What am I worth?</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" media="all" href="<%= static_path(@conn, "/css/app.css") %>">
     <%= render "_analytics.html" %>
   </head>
 

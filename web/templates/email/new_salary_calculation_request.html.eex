@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Salary calculation request</title>
+  </head>
+
+  <body>
+    <p>A new salary calculation request was created with the following details:</p>
+    <br/>
+
+    <table style="width:100%">
+      <tr>
+        <td>Email</td>
+        <td>LinkedIn</td>
+        <td>Github</td>
+      </tr>
+      <tr>
+        <td><%= @email %></td>
+        <td><%= @profile_link %></td>
+        <td><%= @dev_link %></td>
+      </tr>
+    </table>
+
+  </body>
+</html>

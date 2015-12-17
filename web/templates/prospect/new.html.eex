@@ -1,0 +1,36 @@
+<section class="container prospects">
+  <div class="prospects__icon-container">
+    <img src="/images/brandenburger_tor.png" class="prospects__icon" alt="" />
+  </div>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-6">
+      <h1 class="prospects__heading prospects__main-heading">What's in the pot for you?</h1>
+      <p class="prospects__intro">Ever thought about how much a software developer with your skills earns in Berlin?</p>
+      <ul class="prospects__steps">
+        <%= render "prospect_step.html",
+          number: "01",
+          heading: 'Send us your GitHub & LinkedIn',
+          text: 'We analyze your code skills and your work experience to calculate your worth in Berlin.'
+        %>
+        <%= render "prospect_step.html",
+          number: '02',
+          heading: 'Receive a free salary report',
+          text: '... which wil contain a salary band based on your profile and the current job market in Berlin.'
+        %>
+        <%= render "prospect_step.html",
+          number: '03',
+          heading: 'Show me the honey!',
+          text: 'Knowing your worth you can renegotiate your current salary or find a new job.'
+        %>
+      </ul>
+    </div>
+    <div class="col-md-4 prospects__form">
+      <%= render "form.html", changeset: @changeset,
+                              action: prospect_path(@conn, :create) %>
+      <p class="prospects__info">
+        <strong class="prospects__emphasis">How do we know?</strong> Honeypot is a developer-focused job platform. That's why we are pretty knowledgeable about what developers in Berlin are earning and
+      - more importantly - what developers in Berlin should be earning.
+      </p>
+    </div>
+  </div>
+</section>

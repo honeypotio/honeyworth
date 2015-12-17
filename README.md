@@ -1,10 +1,7 @@
-# Honeyworth
+# Honeyworth [![Build Status](https://travis-ci.org/honeypotio/honeyworth.svg)][1]
 
-[![www.honeyworth.io](web/static/assets/images/brandenburger_tor.png)][1]
+Easy way to find out what you could earn as a developer in Berlin [www.honeyworth.io][2]
 
-Easy way to find out what you could earn as a developer in Berlin
-
----
 
 ## Development
 
@@ -45,4 +42,5 @@ About Honeypot
 Honeypot is a developer focused job platform.
 The names and logos for Honeypot are trademarks of Honeypot GmbH.
 
-[1]: http://www.whatamiworth.io
+[1]: https://travis-ci.org/honeypotio/honeyworth
+[2]: http://www.whatamiworth.io

@@ -1,7 +1,8 @@
 language: elixir
 deploy:
   provider: heroku
-  api_key: ${HEROKU_API_KEY}
+  api_key:
+    secure: ${HEROKU_SECURE_API_KEY}
   run:
     - mix ecto.migrate
     - restart

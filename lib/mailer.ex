@@ -8,9 +8,7 @@ defmodule Honeyworth.Mailer do
   @email Application.get_env(:honeyworth, :admin_email)
 
   def new_salary_calculation_request(payload) do
-    if @email && @from do
-      new_salary_calculation_request payload, @email, @from
-    end
+    new_salary_calculation_request payload, @email, @from
   end
 
   defp new_salary_calculation_request(payload, email, from) do

@@ -10,6 +10,8 @@ defmodule Honeyworth.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      aliases: aliases,
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test],
      deps: deps]
   end
 
@@ -35,6 +37,7 @@ defmodule Honeyworth.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
+     {:excoveralls, "~> 0.4", only: :test},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
      {:mailgun, "~> 0.1.1"}]

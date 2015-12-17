@@ -1,4 +1,6 @@
-# Honeyworth [![Build Status](https://travis-ci.org/honeypotio/honeyworth.svg)][1]
+# Honeyworth
+[![Build Status](https://travis-ci.org/honeypotio/honeyworth.svg)][1]
+[![Coverage Status](https://coveralls.io/repos/honeypotio/honeyworth/badge.svg?branch=master&service=github)](https://coveralls.io/github/honeypotio/honeyworth?branch=master)
 
 Easy way to find out what you could earn as a developer in Berlin [www.honeyworth.io][2]
 

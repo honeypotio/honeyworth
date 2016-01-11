@@ -33,7 +33,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 License
 -------
 
-Copyright © 2015 Honeypot GmbH. All rights reserved.
+Copyright © 2016 Honeypot GmbH. All rights reserved.
 
 
 About Honeypot

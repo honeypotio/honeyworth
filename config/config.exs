@@ -9,7 +9,7 @@ use Mix.Config
 config :honeyworth, Honeyworth.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
-  secret_key_base: "RO0yGbKqes/SVp0dguNe0+td8vHVf14nh3C+JoOc1dGUDWZ2cs+rJusYtEWOkODi",
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   render_errors: [accepts: ~w(html json)],
   pubsub: [name: Honeyworth.PubSub,
            adapter: Phoenix.PubSub.PG2]

@@ -15,7 +15,7 @@
         <%= render "prospect_step.html",
           number: '02',
           heading: 'Receive a free salary report',
-          text: '... which wil contain a salary band based on your profile and the current job market in Berlin.'
+          text: '...which will contain a salary band based on your profile and the current job market in Berlin.'
         %>
         <%= render "prospect_step.html",
           number: '03',

@@ -37,7 +37,7 @@ defmodule Honeyworth.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
-     {:plug_utm, "~> 0.0.1"},
+     {:plug_utm, "~> 0.0.2"},
      {:excoveralls, "~> 0.4", only: :test},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},

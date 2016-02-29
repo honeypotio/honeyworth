@@ -17,3 +17,5 @@ config :honeyworth, Honeyworth.Repo,
   database: "honeyworth_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :rollbax, enabled: :log

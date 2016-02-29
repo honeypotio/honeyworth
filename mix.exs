@@ -21,7 +21,7 @@ defmodule Honeyworth.Mixfile do
   def application do
     [mod: {Honeyworth, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :rollbax]]
   end
 
   # Specifies which paths to compile per environment.
@@ -38,6 +38,7 @@ defmodule Honeyworth.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
      {:plug_utm, "~> 0.0.2"},
+     {:rollbax, "~> 0.5"},
      {:excoveralls, "~> 0.4", only: :test},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},

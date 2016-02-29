@@ -8,6 +8,12 @@ config :honeyworth, Honeyworth.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
+config :logger,
+  backends: [Rollbax.Notifier]
+
+config :logger, Rollbax.Notifier,
+  level: :error
+
 config :honeyworth, Honeyworth.Endpoint,
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 

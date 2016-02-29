@@ -40,3 +40,5 @@ config :honeyworth, Honeyworth.Repo,
   database: "honeyworth_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :rollbax, enabled: :log

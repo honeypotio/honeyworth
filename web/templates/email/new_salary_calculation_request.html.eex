@@ -17,11 +17,13 @@
         <td>Email</td>
         <td>LinkedIn</td>
         <td>Github</td>
+        <td>Source</td>
       </tr>
       <tr>
         <td><%= @email %></td>
         <td><%= @profile_link %></td>
         <td><%= @dev_link %></td>
+        <td><%= if assigns[:source], do: @source  %></td>
       </tr>
     </table>
 

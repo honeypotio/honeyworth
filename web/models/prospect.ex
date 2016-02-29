@@ -6,12 +6,13 @@ defmodule Honeyworth.Prospect do
     field :email, :string
     field :profile_link, :string
     field :dev_link, :string
+    field :source, :string
 
     timestamps
   end
 
   @required_fields ~w(email profile_link dev_link)
-  @optional_fields ~w(name)
+  @optional_fields ~w(name source)
   @email_regexp ~r/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/
 
   @doc """

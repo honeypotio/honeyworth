@@ -26,4 +26,10 @@ defmodule Honeyworth.ProspectControllerTest do
     assert html_response(conn, 200) =~ "Oops, something went wrong! Please check the errors below"
   end
 
+  test "addition of utm_source from cookies" do
+    conn = get conn, "/?utm_source=mickey_mouse_comic"
+    conn = post conn, prospect_path(conn, :create), prospect: @valid_attrs
+    assert redirected_to(conn) == prospect_path(conn, :new)
+    assert "mickey_mouse_comic" == Repo.get_by(Prospect, @valid_attrs).source
+  end
 end

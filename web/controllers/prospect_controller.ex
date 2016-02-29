@@ -11,8 +11,9 @@ defmodule Honeyworth.ProspectController do
   end
 
   def create(conn, %{"prospect" => prospect_params}) do
-    changeset = Prospect.changeset(%Prospect{}, prospect_params)
-
+    changeset = Prospect.changeset(
+      %Prospect{}, prospect_params |> Map.merge(%{"source" => conn.cookies["utm.source"]})
+    )
     case Repo.insert(changeset) do
       {:ok, _prospect} ->
         conn

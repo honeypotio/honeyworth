@@ -1,4 +1,6 @@
 language: elixir
+elixir:
+  - 1.2.0
 deploy:
   provider: heroku
   api_key: ${HEROKU_API_KEY}

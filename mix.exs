@@ -32,15 +32,15 @@ defmodule Honeyworth.Mixfile do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [{:phoenix, "~> 1.0.4"},
-     {:phoenix_ecto, "~> 1.2"},
+    [{:phoenix, "~> 1.0"},
+     {:phoenix_ecto, "~> 2.0"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_haml, github: "chrismccord/phoenix_haml"},
      {:plug_utm, "~> 0.0.2"},
      {:rollbax, "~> 0.5"},
      {:excoveralls, "~> 0.4", only: :test},
-     {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:phoenix_live_reload, "~> 1.0.3", only: :dev},
      {:cowboy, "~> 1.0"},
      {:mailgun, "~> 0.1.1"}]
   end
